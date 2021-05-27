@@ -1,0 +1,14 @@
+<div class="post-edit">
+ <div class="post-edit-main">
+  <div class="post-edit-left">
+   
+  </div>
+  <div class="post-edit-right">
+  
+   <a><%=@post.content %>
+  </div>
+  <div class="post-edit-bottom">
+    <%= link_to("削除","/posts/#{@post.id}/destroy",{method: "post"}) %>
+  </div>
+ </div>
+</div>

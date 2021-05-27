@@ -1,0 +1,14 @@
+<div class="edit-back">
+
+ <div class="edit-main">
+  <div class="form-body">
+  <%= form_tag("/users/#{@user.id}/update",{multipart: true})  do %>
+  <p>ユーザーネーム</p>
+   <input name="name"  >
+   <p>ユーザーアイコン<p>
+   <input name="users_image" type="file">
+   <input type="submit" value="更新">
+  <%end%> 
+   </div>
+ </div>
+</div>

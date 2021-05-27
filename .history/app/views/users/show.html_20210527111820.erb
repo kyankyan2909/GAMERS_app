@@ -1,0 +1,27 @@
+<div class="show-main">
+ <div class="show-user">
+   <img src="<%="/users_image/#{@user.id}.jpg"%>">
+   <%= @user.name%>
+   <%= link_to("編集","users/#{@user.id}/edit")%>
+ </div>
+ <div class="show-posts">
+   <ul class="user-tabs">
+    <li><%= link_to("投稿","/users/#{@user.id}")%></li>
+   </ul>
+   <div class="post-show-overall">
+     <% @posts.each do |post|%>
+      <div class="post-show-main">
+        <div class="post-show-left">
+        <img src="<%="/users_image/#{@user.id}.jpg"%>">
+      </div>
+       <div class="post-show-right">
+         <%= @user.name%>
+         <%= link_to(post.content,"/posts/#{post.id}/edit")%>
+       </div>
+      </div>
+
+     <%end%>
+   </div>
+ </div>
+
+</div>

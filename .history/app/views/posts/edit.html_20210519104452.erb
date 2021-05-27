@@ -1,0 +1,14 @@
+<div class="post-edit">
+ <div class="post-edit-main">
+  <div class="post-edit-left">
+    <img src=" <%="users_image/#{@current_user.id}.jpg"%>">
+  </div>
+  <div class="post-edit-right">
+   <a><%=@user.name%></a>
+   <a><%=@post.content %></a>
+  </div>
+  <div class="post-edit-bottom">
+    <%= link_to("削除","/posts/#{@post.id}/destroy",{method: "post"}) %>
+  </div>
+ </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="show-main">
+ <div class="show-user">
+ </div>
+ <div class="show-posts">
+   <ul class="user-tabs">
+    <li><%= link_to("投稿","/users/#{@user.id}")%></li>
+   </ul>
+  <% @posts.each do |post|%>
+    <div class="post-show-main">
+      <div class="post-show-left">
+
+      </div>
+      <div class="">
+    </div>
+
+  <%end%>
+ </div>
+
+</div>

@@ -1,0 +1,104 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.index-main{
+  display:flex;
+}
+/*left=======================================*/
+.index-left{
+  width:30%;
+  height:700px;
+  float:left;
+  border:solid 2px #000;
+  background-color:#dcdcdc;
+  
+}
+.form input[type="submit"]{
+  width:75px;
+  height:30px;
+  margin-left:10px;
+  border: solid 2px #000;
+
+}
+.form textarea{
+  margin-top:50px;
+  margin-left:20px;
+  height:200px;
+  width:25vw;
+  border: solid 2px #000;
+  border-radius:5px;
+  font-size:20px;
+}
+.index-left-user{
+
+
+}
+.index-left-user h2{
+ color:#000;
+}
+.search{
+  margin-left:10px;
+  margin-top:10px;
+}
+/*right======================================*/
+.index-right{
+  width:70%;
+  height:700px;
+  float:right;
+  border-bottom:solid 2px #000;
+ background-image:url("/index-background.jpg");
+ background-size:cover;
+ overflow:scroll;
+}
+
+.post-items{
+  width:400px;
+  height:100px;
+  border:solid 0.5px #000;
+  border-radius:5px;
+  margin:10px;
+  padding:20px 30px;
+  overflow:hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  background-color:#fff;
+
+}
+.post-items a{
+  color:#000;
+  font-size:15px;
+
+}
+.post-
+//edit=====================================================
+.post-edit{
+ 
+  width:700px;
+  height:200px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:100px;
+  border:solid 1px #000;
+  border-radius:10px;
+  
+}
+
+.post-edit a{
+ color:#000;
+}
+.post-edit-right{
+  display:block;
+}
+.post-edit-right a{
+ font-size:30px;
+ 
+}
+.post-edit-bottom a{
+  font-size:25px;
+  color:#c0c0c0;
+  text-decoration:underline;
+
+}
+//search===============================================
+.post-search{
+  background-color:#fff;
+}
