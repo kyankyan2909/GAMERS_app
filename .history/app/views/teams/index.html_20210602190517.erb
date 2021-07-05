@@ -1,0 +1,26 @@
+<div class="index-main">
+  <div class="index-left">
+   <div class="team-create">
+     <%= form_tag("/teams/create") do %>
+     <p>チーム作成</p>
+     <input name="name">
+     <input type="submit" value="作成">
+     <%end%>
+   </div>
+  </div> 
+  <div class="index-right">
+     <div class="teams-overall">
+       <% @teams.each do |team|%>
+        <div class="teams-main">
+         <div class="teams-left">
+         </div>
+     
+         <div class="teams-right">
+          <%= @teams.name%>
+         </div>
+      </div>
+
+     <%end%>
+   </div>
+  </div> 
+</div>

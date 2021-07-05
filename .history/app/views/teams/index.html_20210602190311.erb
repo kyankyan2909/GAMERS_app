@@ -1,0 +1,27 @@
+<div class="index-main">
+  <div class="index-left">
+   <div class="team-create">
+     <%= form_tag("/teams/create") do %>
+     <p>チーム作成</p>
+     <input name="name">
+     <input type="submit" value="作成">
+     <%end%>
+   </div>
+  </div> 
+  <div class="index-right">
+     <div class="team-overall">
+     <% @teams.each do |team|%>
+      <div class="team--main">
+        <div class="post-show-left">
+        <img src="<%="/users_image/#{@user.id}.jpg"%>">
+      </div>
+       <div class="post-show-right">
+         <%= @user.name%>
+         <%= link_to(post.content,"/posts/#{post.id}/edit")%>
+       </div>
+      </div>
+
+     <%end%>
+   </div>
+  </div> 
+</div>

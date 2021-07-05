@@ -1,0 +1,41 @@
+<div class="index-main">
+ <div class="index-left">
+  <div class="search">
+   <%= form_tag("/posts/search",{method:"get"}) do%>
+   <%= text_field_tag :search%>
+   <%= submit_tag 'search',name: nil%>
+   <%end%>
+  </div>
+  <div class="index-left-user">
+   <img src=" <%="/users_image/#{@current_user.id}.jpg"%>">
+   <p><%=@current_user.name%></p>
+  </div>
+  <div class="team-create">
+     <%= link_to("チーム作成","/teams")%>
+  </div>
+
+
+   <%= form_tag("/posts/create") do %>
+   <div class="form">
+    <textarea name="content"></textarea>
+    <input type="submit" value="投稿する">
+   </div>
+    <%=@username%>
+   <%end%>
+ </div>
+ <div class="index-right" >
+
+  <% @posts.each do |post| %>
+ <div class="post-items-overall">
+  <div class="post-left">
+    <img src=" <%="/users_image/#{@current_user.id}.jpg"%>">
+  </div>
+  <div class="post-items">
+    <div class="post-right">
+    <%= link_to(post.content,"/posts/#{post.id}")%>
+    </div>
+  </div>
+ </div>
+  <%end%>
+ </div>
+</div>

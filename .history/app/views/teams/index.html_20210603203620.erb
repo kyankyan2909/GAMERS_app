@@ -1,0 +1,26 @@
+<div class="index-main">
+  <div class="team-index-right"> 
+   <% @teams.each do |team|%>
+     <div class="teams-main-all">
+       <div class="teams-main">
+        <div class="teams-left">
+         <%= image_tag"/team-degault_image.jpg"%>
+  <div class="team-index-left">
+   <div class="team-create">
+     <%= form_tag("/teams/create") do %>
+     <p>チーム作成</p>
+     <input name="name">
+     <input type="submit" value="作成">
+     <%end%>
+   </div>
+  </div> 
+        </div>
+        <div class="teams-right">
+         <%= team.name%>
+         <%= link_to("参加","/teams/show")%>
+        </div>
+       </div>
+     </div>
+   <%end%>
+  </div> 
+</div>

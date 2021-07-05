@@ -1,0 +1,25 @@
+Rails.application.routes.draw do
+  root "home#top"
+ 
+
+  get 'posts/index'
+  post"posts/create"=>"posts#create"
+  get "posts/:id"=>"posts#edit"
+  post "posts/:id/destroy"=>"posts#destroy"
+
+
+ 
+  get "users/signup"=>"users#signup"
+  get "users/signin"
+  post "users/create"=>"users#create"
+  post "signin"=>"users#signin"
+  get"users/logout"=>"users#logout"
+  post "users/:id/update"=>"users#update"
+  get "users/:id/edit"=>"users#edit"
+  get "users/:id/show"=>"users#show"
+
+  get "teams/index"=>"teams#index"
+  post"teams/create"=>"teams#create"
+  get"teams/show"=>"teams#show"
+  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+end

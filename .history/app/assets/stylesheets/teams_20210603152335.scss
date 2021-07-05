@@ -1,0 +1,49 @@
+// Place all the styles related to the teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+//index===================================================
+//left=====================================================
+.team-index-left{
+  width:30%;
+  height:700px;
+  float:left;
+  border-top:solid 2px #fff;
+  border-right:solid 2px #fff;
+  background-color:#000;
+  
+}
+//right==================================================
+.team-index-right{
+  background-color:#000;
+  width:70%;
+  height:700px;
+  float:right;
+  border-top:solid 2px #fff;
+}
+.teams-main{
+  margin-left:auto;
+  margin-right:auto;
+  background-color:#fff;
+  box-shadow:0 2px 6px  #c1ced7;
+  width:50vw;
+  height:60px;
+  overflow:hidden;
+  display:flex;
+}
+.teams-left img{
+  width: 40px;
+  height:40px;
+  border-radius :50%;
+  object-fit:cover;
+  margin:10px 10px 0 0;
+}
+.teams
+.teams-right a{
+  color:#c0c0c0;
+  font-size:17px;
+  text-decoration:underline;
+}
+.teams-right a:hover{
+  color:#006699;
+}
